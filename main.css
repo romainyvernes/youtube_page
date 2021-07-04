@@ -47,11 +47,133 @@ table {
 	border-spacing: 0;
 }
 
+button {
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+i {
+  font-size: 1.3em;
+}
+
 /* Header */
 
 header {
-  background-color: lightcoral;
-  height: 60px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1em;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+  color: transparent;
+}
+
+.nav-link {
+  margin: 0 0.5em;
+}
+
+header i {
+  color: rgb(85, 85, 85);
+}
+
+.header-element {
+  display: flex;
+}
+
+#youtube-logo {
+  height: 90px;
+  margin-left: 1em;
+}
+
+.header-element.middle {
+  width: 55vw;
+  max-width: 700px;
+  margin: 0 2em;
+}
+
+.search-bar {
+  border: 1px solid rgb(201, 201, 201);
+  display: flex;
+  border-radius: 2px;
+  width: 100%;
+  margin-right: 0.3em;
+}
+
+.search-bar input,
+.search-button {
+  border: none;
+}
+
+.search-bar input {
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  padding-left: 1em;
+  box-shadow: inset 1px 1px 2px -0.5px rgb(230, 230, 230);
+  width: 100%;
+  font-size: 1em;
+  min-width: 80px;
+}
+
+.search-bar input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px rgb(25, 116, 177);
+}
+
+.search-bar input::placeholder {
+  color: rgb(146, 146, 146);
+}
+
+.search-button {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1.5em;
+  background-color: rgb(245, 245, 245);
+  margin-left: 0.08em;
+  border-left: 1px solid rgb(201, 201, 201);
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+}
+
+.search-button:hover {
+  background-color: rgb(228, 228, 228);
+}
+
+.search-button i {
+  font-size: 1.4em;
+  color: rgb(117, 117, 117);
+}
+
+.search-button:hover > i {
+  color: rgb(73, 73, 73);
+}
+
+.sign-in-button {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 154, 211);
+  border: 1px solid rgb(0, 154, 211);
+  padding: 0.4em 0.6em;
+  margin: 0 1em 0 0.8em;
+  border-radius: 2px;
+  min-width: fit-content;
+}
+
+.sign-in-button img {
+  height: 25px;
+  margin-right: 0.5em;
+}
+
+.nav-button {
+  border: none;
 }
 
 /* Main section */

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>YouTube Page</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
     <link rel="stylesheet" href="main.css">
@@ -10,9 +10,40 @@
   <body>
 
     <header>
-      <span class="material-icons-outlined">
-        menu
-      </span>
+      <div class="header-element">
+        <a href="#" class="nav-link">
+          <i class="material-icons">menu</i>
+        </a>
+        <a href="#">
+          <img src="assets/youtube_logo.svg" alt="Youtube logo" id="youtube-logo">
+        </a>
+      </div>
+      
+      <div class="header-element middle">
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+          <button class="search-button">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+        <button>
+          <i class="material-icons">mic</i>
+        </button>
+      </div>
+
+      <div class="header-element">
+        <a href="#" class="nav-link">
+          <i class="material-icons">apps</i>
+        </a>
+        <a href="#" class="nav-link">
+          <i class="material-icons">more_vert</i>
+        </a>
+        <button class="sign-in-button">
+          <img src="assets/person_icon.png" 
+               alt="Logo representing the face of a person">
+          SIGN IN
+        </button>
+      </div>
     </header>
 
     <section class="main-section">

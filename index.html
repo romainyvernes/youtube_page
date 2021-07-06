@@ -36,6 +36,12 @@
       </div>
 
       <div class="header-element">
+        <button class="nav-button" id="mic-button">
+          <i class="material-icons">mic</i>
+        </button>
+        <button class="nav-button" id="search-button">
+          <i class="material-icons">search</i>
+        </button>
         <button class="nav-button">
           <i class="material-icons">apps</i>
         </button>
@@ -50,67 +56,91 @@
       </div>
     </header>
 
-    <main>
-      <section class="video-container">
-        <iframe width="640" 
-                height="360" 
-                src="https://www.youtube.com/embed/lO1nTh52OCg" 
-                title="YouTube video player" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-        </iframe>
-        <h2>20 Things to do in Los Angeles in 2020</h2>
-        <div class="video-data">
-          <div class="left">
-            <span>709,684 views</span>
-            <span>&#8226;</span>
-            <span>Jan 11, 2020</span>
-          </div>
-          <div class="right">
-            <button class="data-button thumbs-button">
-              <i class="material-icons">thumb_up</i>
-              <span>16K</span>
-            </button>
-            <button class="data-button thumbs-button">
-              <i class="material-icons">thumb_down</i>
-              <span>322</span>
-            </button>
-            <button class="data-button">
-              <i class="material-icons enlarge" id="share-icon">reply</i>
-              <span>SHARE</span>
-            </button>
-            <button class="data-button">
-              <i class="material-icons enlarge">playlist_add</i>
-              <span>SAVE</span>
-            </button>
-            <button class="data-button" id="more-button">
-              <i class="material-icons enlarge">more_horiz</i>
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="description">
-        <a href="#">
-          <img src="https://yt3.ggpht.com/ytc/AKedOLROzPj8o2FWGFzJntlDUppMDTiV4hK0-CIlNlj_DQ=s48-c-k-c0x00ffffff-no-rj" 
-               alt="Video owner's avatar">
-        </a>
-        
-        <section>
-          <div class="description-header">
-            <div>
-              <h3>California Through My Lens</h3>
-              <span class="subscriber-count">190K subscribers</span>
+    <div class="content-container">
+      <main>
+        <section class="video-container">
+          <iframe width="640" 
+                  height="360" 
+                  src="https://www.youtube.com/embed/lO1nTh52OCg" 
+                  title="YouTube video player" 
+                  frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+          <h2>20 Things to do in Los Angeles in 2020</h2>
+          <div class="video-data">
+            <div class="left">
+              <span>709,684 views &#8226; Jan 11, 2020</span>
             </div>
-            <button class="subscribe-button">SUBSCRIBE</button>
+            <div class="right">
+              <button class="data-button thumbs-button">
+                <i class="material-icons">thumb_up</i>
+                <span>16K</span>
+              </button>
+              <button class="data-button thumbs-button">
+                <i class="material-icons">thumb_down</i>
+                <span>322</span>
+              </button>
+              <button class="data-button">
+                <i class="material-icons enlarge" id="share-icon">reply</i>
+                <span>SHARE</span>
+              </button>
+              <button class="data-button">
+                <i class="material-icons enlarge">playlist_add</i>
+                <span>SAVE</span>
+              </button>
+              <button class="data-button" id="more-button">
+                <i class="material-icons enlarge">more_horiz</i>
+              </button>
+            </div>
           </div>
-          <p class="description-text">
-            Los Angeles is a massive city with so much to see as a tourist or visitor. I wanted to make this video to spotlight the LA area and to share some of the best spots to explore if you visit. I spent a lot of time researching and getting content for this video, so I hope it
-          </p>
-          <button class="show-more-button">SHOW MORE</button>
         </section>
-      </section>
+
+        <section class="description">
+          <a href="#">
+            <img src="https://yt3.ggpht.com/ytc/AKedOLROzPj8o2FWGFzJntlDUppMDTiV4hK0-CIlNlj_DQ=s48-c-k-c0x00ffffff-no-rj" 
+                alt="Video owner's avatar">
+          </a>
+          
+          <section>
+            <div class="description-header">
+              <div>
+                <h3>California Through My Lens</h3>
+                <span class="subscriber-count">190K subscribers</span>
+              </div>
+              <button class="subscribe-button">SUBSCRIBE</button>
+            </div>
+            <p class="description-text">
+              Los Angeles is a massive city with so much to see as a tourist or visitor. I wanted to make this video to spotlight the LA area and to share some of the best spots to explore if you visit. I spent a lot of time researching and getting content for this video, so I hope it
+            </p>
+            <button class="show-more-button">SHOW MORE</button>
+          </section>
+        </section>
+      </main>
+
+      <aside class="thumbnail-section">
+        <div class="thumbnail">
+          <div class="thumbnail-preview">
+            <a href="https://www.youtube.com/watch?v=3AvoV8GodbU">
+              <img src="https://i.ytimg.com/vi/3AvoV8GodbU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCdhYSLkhuma9ic46IPBHQfiGaOIw"
+                   alt="Video screenshot">
+            </a>
+            <span class="overlay-time">10:27</span>
+            <div class="overlay-play">
+              <a href="https://www.youtube.com/watch?v=3AvoV8GodbU"><i class="material-icons">watch_later</i></a>
+              <a href="https://www.youtube.com/watch?v=3AvoV8GodbU"><i class="material-icons">queue_music</i></a>
+            </div>
+          </div>
+          <div class="thumbnail-description">
+            <a href="https://www.youtube.com/watch?v=3AvoV8GodbU">
+              <h2>23 Things to Do in Downtown Los Angeles</h2>
+              <h3>California Through My Lens</h3>
+              <span>2.3M views &#8226; 3 years ago</span>
+            </a>
+          </div>
+          <button class="thumbnail-more-button"><i class="material-icons">more_vert</i></button>
+        </div>
+      </aside>
 
       <section class="comments">
         <div class="comments-header">
@@ -123,16 +153,16 @@
         
         <div class="comment-input-container">
           <img src="https://yt3.ggpht.com/a/default-user=s48-c-k-c0x00ffffff-no-rj" 
-               alt="User's avatar"
-               class="avatar">
+              alt="User's avatar"
+              class="avatar">
           <input type="text" placeholder="Add a public comment...">
         </div>
         
         <div class="comment-container">
           <a href="#">
             <img src="https://yt3.ggpht.com/ytc/AKedOLSI-mzTC9mB1JlpYjVSCHeOf5mBEREA7kicwQfg=s48-c-k-c0x00ffffff-no-rj" 
-                 alt="Commenter's avatar"
-                 class="avatar">
+                alt="Commenter's avatar"
+                class="avatar">
           </a>
           <div>
             <div class="comment-header">
@@ -160,33 +190,6 @@
           </div>
         </div>
       </section>
-    </main>
-
-    <aside class="thumbnail-section">
-      <div class="thumbnail">
-        <div class="thumbnail-preview">
-          <a href="https://www.youtube.com/watch?v=3AvoV8GodbU">
-            <img src="https://i.ytimg.com/vi/3AvoV8GodbU/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLCdhYSLkhuma9ic46IPBHQfiGaOIw"
-                 alt="Video screenshot">
-          </a>
-          <span class="overlay-time">10:27</span>
-          <div class="overlay-play">
-            <a href="https://www.youtube.com/watch?v=3AvoV8GodbU"><i class="material-icons">watch_later</i></a>
-            <a href="https://www.youtube.com/watch?v=3AvoV8GodbU"><i class="material-icons">queue_music</i></a>
-          </div>
-        </div>
-        <div class="thumbnail-description">
-          <a href="https://www.youtube.com/watch?v=3AvoV8GodbU">
-            <h2>23 Things to Do in Downtown Los Angeles</h2>
-            <h3>California Through My Lens</h3>
-            <span>2.3M views</span>
-            <span>&#8226;</span>
-            <span>3 years ago</span>
-          </a>
-        </div>
-        <button class="thumbnail-more-button"><i class="material-icons">more_vert</i></button>
-      </div>
-    </aside>
-
+    </div>
   </body>
 </html>

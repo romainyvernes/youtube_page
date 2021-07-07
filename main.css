@@ -263,6 +263,7 @@ main {
   color: rgb(88, 88, 88);
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .video-data .right {
@@ -435,11 +436,17 @@ main {
 .comment-footer {
   margin-left: -0.5em;
   font-size: 0.8em;
+  color: rgb(88, 88, 88);
+}
+
+.comment-footer button {
+  color: inherit;
 }
 
 .comment-footer i {
   font-size: 1.2em;
   padding: 0.5em;
+  color: inherit;
 }
 
 .thumbs-count {
@@ -470,11 +477,19 @@ main {
   height: 100%;
   background-color: transparent;
   width: 420px;
+  grid-row: 1 / 3;
+  grid-column: 2 / 3;
 }
 
 .thumbnail {
   display: flex;
   align-items: flex-start;
+  padding: 0.25em;
+  border-radius: 3px;
+}
+
+.thumbnail:active {
+  background-color: rgb(216, 216, 216);
 }
 
 .thumbnail:hover .overlay-time {
@@ -530,6 +545,11 @@ main {
   font-size: 0.9em;
   font-weight: bold;
   line-height: 1.5em;
+  max-height: 40px;
+  max-width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .thumbnail-description h3 {
@@ -544,9 +564,16 @@ main {
 }
 
 .thumbnail-more-button {
-  margin-top: -0.8em;
   color: rgb(88, 88, 88);
   opacity: 0;
+}
+
+.thumbnail-more-button i {
+  padding: 0.1em;
+}
+
+.thumbnail-more-button i:active {
+  background-color: rgb(184, 184, 184);
 }
 
 /* Page responsiveness */
@@ -589,12 +616,13 @@ main {
 }
 
 @media (max-width: 660px) {
-  /* hide search bar */
+  /* remove search bar from display, including mic icon, to prevent it from
+  taking space and to allow the entire header to remain within window width */
   .header-element.middle {
     display: none;
   }
 
-
+  /* display hidden mic icon */
   #mic-button {
     display: block;
   }
